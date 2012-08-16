@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Socialite.js</title>
+	<link rel="stylesheet" href="demo.css">
+	<!--[if lt IE 9]>
+	<script type="text/javascript">
+	(function(a,b){function k(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function l(){var a=r.elements;return typeof a=="string"?a.split(" "):a}function m(a){var b=i[a[g]];return b||(b={},h++,a[g]=h,i[h]=b),b}function n(a,c,f){c||(c=b);if(j)return c.createElement(a);f=f||m(c);var g;return f.cache[a]?g=f.cache[a].cloneNode():e.test(a)?g=(f.cache[a]=f.createElem(a)).cloneNode():g=f.createElem(a),g.canHaveChildren&&!d.test(a)?f.frag.appendChild(g):g}function o(a,c){a||(a=b);if(j)return a.createDocumentFragment();c=c||m(a);var d=c.frag.cloneNode(),e=0,f=l(),g=f.length;for(;e<g;e++)d.createElement(f[e]);return d}function p(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(a){return r.shivMethods?n(a):b.createElem(a)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+l().join().replace(/\w+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(r,b.frag)}function q(a){a||(a=b);var c=m(a);return r.shivCSS&&!f&&!c.hasCSS&&(c.hasCSS=!!k(a,"article,aside,figcaption,figure,footer,header,hgroup,nav,section{display:block}mark{background:#FF0;color:#000}")),j||p(a,c),a}var c=a.html5||{},d=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,e=/^<|^(?:a|b|button|code|div|fieldset|form|h1|h2|h3|h4|h5|h6|i|iframe|img|input|label|li|link|ol|option|p|param|q|script|select|span|strong|style|table|tbody|td|textarea|tfoot|th|thead|tr|ul)$/i,f,g="_html5shiv",h=0,i={},j;(function(){var a=b.createElement("a");a.innerHTML="<xyz></xyz>",f="hidden"in a,j=a.childNodes.length==1||function(){try{b.createElement("a")}catch(a){return!0}var c=b.createDocumentFragment();return typeof c.cloneNode=="undefined"||typeof c.createDocumentFragment=="undefined"||typeof c.createElement=="undefined"}()})();var r={elements:c.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:c.shivCSS!==!1,supportsUnknownElements:j,shivMethods:c.shivMethods!==!1,type:"default",shivDocument:q,createElement:n,createDocumentFragment:o};a.html5=r,q(b)})(this,document)
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="text">
+		<h1>Late Loading and Custom Defaults!</h1>
+		<p><input id="social2-load" onclick="javascript:Socialite.load(document.getElementById('social2'));this.disabled=true;return false;" type="button" value="Load Buttons!"></p>
+	</div>
+
+	<ul id="social2" class="cf">
+		<li>
+			<a href="http://twitter.com/share" class="socialite twitter-share" data-text="Socialite.js" data-url="http://socialitejs.com" data-count="horizontal" data-via="dbushell" rel="nofollow" target="_blank">
+				<span class="vhidden">Share on Twitter</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=http://socialitejs.com" class="socialite googleplus-one" data-size="medium" data-href="http://socialitejs.com" rel="nofollow" target="_blank">
+				<span class="vhidden">Share on Google+</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.facebook.com/sharer.php?u=http://www.socialitejs.com&amp;t=Socialite.js" class="socialite facebook-like" data-href="http://socialitejs.com" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank">
+				<span class="vhidden">Share on Facebook</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://socialitejs.com&amp;title=Socialite.js" class="socialite linkedin-share" data-url="http://socialitejs.com" data-counter="right" rel="nofollow" target="_blank">
+				<span class="vhidden">Share on LinkedIn</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://pinterest.com/pin/create/button/?url=http://socialitejs.com/&amp;media=http://socialitejs.com/images/logo.png&amp;description=Socialite.js" class="socialite pinterest-pinit" data-count-layout="horizontal">
+				<span class="vhidden">Pin It!</span>
+			</a>
+		</li>
+	</ul>
+
+	<div class="text">
+		<p>Copyright &copy; <a rel="author" href="http://dbushell.com/">David Bushell</a>
+	</div>
+	<script src="../socialite.js"></script>
+	<script src="../extensions/socialite.pinterest.js"></script>
+	<script>
+
+    window._socialite = window._socialite || [];
+    window._socialite.push(function()
+    {
+        Socialite.process(document.getElementById('social2'));
+        var btn = document.getElementById('social2-load');
+        btn.disabled = false;
+        Socialite.load(document.getElementById('social'));
+        Socialite.activate(document.getElementById('follow-button'), 'twitter-follow');
+    });
+
+	</script>
+</body>
+</html>
